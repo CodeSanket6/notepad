@@ -12,6 +12,12 @@
       rich encoding support, search/replace, word wrap, and classic Windows keyboard shortcuts.
     </p>
   </description>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Notepad for Linux with Windows 11 Fluent design</caption>
+      <image>https://raw.githubusercontent.com/CodeSanket6/notepad/main/assets/screenshot.png</image>
+    </screenshot>
+  </screenshots>
   <categories>
     <category>Utility</category>
     <category>TextEditor</category>
@@ -28,7 +34,7 @@
   <url type="homepage">https://github.com/CodeSanket6/notepad</url>
   <url type="bugtracker">https://github.com/CodeSanket6/notepad/issues</url>
   <url type="vcs-browser">https://github.com/CodeSanket6/notepad</url>
-  <developer>
+  <developer id="io.github.codesanket6">
     <name>Sanket</name>
   </developer>
 </component>
