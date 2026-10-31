@@ -1,0 +1,18 @@
+#!@PYTHON@
+import sys
+import os
+import signal
+
+# Clean SIGINT
+signal.signal(signal.SIGINT, signal.SIG_DFL)
+
+pkgdatadir = '@pkgdatadir@'
+pkglibdir = '@pkglibdir@'
+
+os.environ['PKGDATADIR'] = pkgdatadir
+sys.path.insert(1, pkglibdir)
+
+from notepad.app import main
+
+if __name__ == '__main__':
+    sys.exit(main())

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.ninja.notepad</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>Notepad</name>
+  <summary>Windows 11 Fluent text editor for Linux</summary>
+  <description>
+    <p>
+      An exact, pixel-aligned Windows 11 Notepad experience natively for Linux desktops.
+      Features full Fluent design with Mica styling, native tab management, seamless client canvas,
+      rich encoding support, search/replace, word wrap, and classic Windows keyboard shortcuts.
+    </p>
+  </description>
+  <categories>
+    <category>Utility</category>
+    <category>TextEditor</category>
+  </categories>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="11.2607.14.0" date="2026-10-31">
+      <description>
+        <p>Windows 11 Fluent design tabs, Mica styling, UTF-8/CRLF handling, and customizable theme settings.</p>
+      </description>
+    </release>
+  </releases>
+  <launchable type="desktop-id">io.ninja.notepad.desktop</launchable>
+  <url type="homepage">https://ninja.io/notepad</url>
+  <url type="bugtracker">https://github.com/ninja/notepad/issues</url>
+  <url type="vcs-browser">https://github.com/ninja/notepad</url>
+  <developer id="io.ninja">
+    <name>Ninja</name>
+  </developer>
+</component>

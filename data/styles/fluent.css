@@ -1,0 +1,443 @@
+/* ==========================================================================
+   Windows 11 Fluent Design System CSS for Notepad
+   Matches WinUI 3 Dark and Light Mica specifications.
+   ========================================================================== */
+
+/* Base Window Configuration */
+window.notepad-window {
+    font-family: "Segoe UI Variable Text", "Segoe UI", -apple-system, BlinkMacSystemFont, "Liberation Sans", "Noto Sans", system-ui, sans-serif;
+    border: none;
+    box-shadow: none;
+}
+
+/* --------------------------------------------------------------------------
+   DARK THEME PALETTE
+   -------------------------------------------------------------------------- */
+.notepad-dark {
+    background-color: #202020;
+    color: #f3f3f3;
+}
+
+.notepad-dark .notepad-titlebar {
+    background-color: #202020;
+    border-bottom: none;
+    min-height: 40px;
+    padding: 0 4px 0 8px;
+}
+
+.notepad-dark .notepad-menubar {
+    background-color: #272727;
+    padding: 2px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    min-height: 32px;
+}
+
+.notepad-dark textview.notepad-editor-view,
+.notepad-dark textview.notepad-editor-view text {
+    background-color: #272727;
+    color: #f0f0f0;
+    caret-color: #60cdff;
+}
+
+.notepad-dark textview.notepad-editor-view text:selected {
+    background-color: rgba(96, 205, 255, 0.35);
+    color: #ffffff;
+}
+
+.notepad-dark .notepad-statusbar {
+    background-color: #202020;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    color: #9d9d9d;
+    font-size: 11px;
+    min-height: 26px;
+    padding: 2px 10px;
+}
+
+.notepad-dark .status-item {
+    padding: 2px 12px;
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.notepad-dark .status-item:first-child {
+    border-left: none;
+}
+
+/* Dark Mode Tabs */
+.notepad-dark .fluent-tab {
+    background-color: transparent;
+    color: #a6a6a6;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: none;
+}
+
+.notepad-dark .fluent-tab-hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: #ffffff;
+}
+
+.notepad-dark .fluent-tab-active {
+    background-color: #272727;
+    color: #ffffff;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.07);
+    border-right: 1px solid rgba(255, 255, 255, 0.07);
+    border-bottom: none;
+}
+
+.notepad-dark .fluent-tab-divider {
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+.notepad-dark .fluent-tab-dot {
+    color: #60cdff;
+}
+
+.notepad-dark .find-replace-panel {
+    background-color: #2c2c2c;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+    color: #ffffff;
+}
+
+.notepad-dark .find-input {
+    background-color: #1e1e1e;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.notepad-dark .find-input:focus-within {
+    border-color: #60cdff;
+}
+
+/* --------------------------------------------------------------------------
+   LIGHT THEME PALETTE (Exact Windows 11 Mica / Clean Canvas)
+   -------------------------------------------------------------------------- */
+.notepad-light {
+    background-color: #dce3ed;
+    color: #1a1a1a;
+}
+
+.notepad-light .notepad-titlebar {
+    background-color: #dce3ed;
+    border-bottom: none;
+    min-height: 40px;
+    padding: 0 4px 0 8px;
+}
+
+.notepad-light .notepad-menubar {
+    background-color: #ffffff;
+    padding: 2px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    min-height: 32px;
+}
+
+.notepad-light textview.notepad-editor-view,
+.notepad-light textview.notepad-editor-view text {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    caret-color: #0067c0;
+}
+
+.notepad-light textview.notepad-editor-view text:selected {
+    background-color: rgba(0, 103, 192, 0.25);
+    color: #1a1a1a;
+}
+
+.notepad-light .notepad-statusbar {
+    background-color: #ffffff;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    color: #5d5d5d;
+    font-size: 11px;
+    min-height: 26px;
+    padding: 2px 10px;
+}
+
+.notepad-light .status-item {
+    padding: 2px 12px;
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.notepad-light .status-item:first-child {
+    border-left: none;
+}
+
+/* Light Mode Tabs */
+.notepad-light .fluent-tab {
+    background-color: transparent;
+    color: #595959;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: none;
+}
+
+.notepad-light .fluent-tab-hover {
+    background-color: rgba(255, 255, 255, 0.55);
+    color: #111111;
+}
+
+.notepad-light .fluent-tab-active {
+    background-color: #ffffff;
+    color: #111111;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-left: 1px solid rgba(0, 0, 0, 0.06);
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+    border-bottom: none;
+}
+
+.notepad-light .fluent-tab-divider {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.notepad-light .fluent-tab-dot {
+    color: #0067c0;
+}
+
+.notepad-light .find-replace-panel {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    color: #111111;
+}
+
+.notepad-light .find-input {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: #111111;
+}
+
+.notepad-light .find-input:focus-within {
+    border-color: #0067c0;
+}
+
+/* --------------------------------------------------------------------------
+   FLUENT TABS WIDGET STYLING
+   -------------------------------------------------------------------------- */
+.notepad-titlebar-logo {
+    min-width: 18px;
+    min-height: 18px;
+    margin-right: 6px;
+    margin-left: 8px;
+}
+
+.fluent-tab-bar {
+    margin-bottom: 0px;
+}
+
+.fluent-tab {
+    min-width: 140px;
+    min-height: 34px;
+    border-radius: 7px 7px 0 0;
+    padding: 0 8px 0 10px;
+    margin: 0 1px;
+    font-size: 12px;
+    transition: background-color 80ms ease-in-out;
+}
+
+.fluent-tab-label {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.fluent-tab-dot {
+    font-size: 10px;
+    margin-right: 4px;
+}
+
+.fluent-tab-divider {
+    min-width: 1px;
+    min-height: 16px;
+    margin: 0 1px;
+    opacity: 0.8;
+}
+
+/* Buttons transparency & Fluent Mica blending */
+button.fluent-tab-close,
+.fluent-tab-close {
+    border-radius: 4px;
+    min-width: 20px;
+    min-height: 20px;
+    padding: 0px;
+    margin-left: 4px;
+    background: transparent;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    opacity: 0.65;
+    transition: background-color 60ms ease, opacity 60ms ease;
+}
+
+.notepad-light button.fluent-tab-close:hover,
+.notepad-light .fluent-tab-close:hover {
+    background: rgba(0, 0, 0, 0.08);
+    background-color: rgba(0, 0, 0, 0.08);
+    opacity: 1.0;
+}
+
+.notepad-dark button.fluent-tab-close:hover,
+.notepad-dark .fluent-tab-close:hover {
+    background: rgba(255, 255, 255, 0.12);
+    background-color: rgba(255, 255, 255, 0.12);
+    opacity: 1.0;
+}
+
+button.fluent-tab-add,
+.fluent-tab-add {
+    border-radius: 4px;
+    min-width: 28px;
+    min-height: 28px;
+    padding: 0px;
+    margin-left: 4px;
+    margin-bottom: 2px;
+    background: transparent;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    opacity: 0.8;
+    transition: background-color 60ms ease, opacity 60ms ease;
+}
+
+.notepad-light button.fluent-tab-add:hover,
+.notepad-light .fluent-tab-add:hover {
+    background: rgba(0, 0, 0, 0.07);
+    background-color: rgba(0, 0, 0, 0.07);
+    opacity: 1.0;
+}
+
+.notepad-dark button.fluent-tab-add:hover,
+.notepad-dark .fluent-tab-add:hover {
+    background: rgba(255, 255, 255, 0.09);
+    background-color: rgba(255, 255, 255, 0.09);
+    opacity: 1.0;
+}
+
+/* Window controls blending seamlessly into titlebar */
+windowcontrols button {
+    background: transparent;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    border-radius: 0;
+    min-width: 44px;
+    min-height: 32px;
+    padding: 0;
+}
+
+.notepad-light windowcontrols button:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.notepad-dark windowcontrols button:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+windowcontrols button.close:hover {
+    background-color: #c42b1c;
+    color: #ffffff;
+}
+
+/* --------------------------------------------------------------------------
+   FLUENT MENU BAR - Normal text buttons just like Windows Notepad
+   -------------------------------------------------------------------------- */
+button.notepad-menu-btn {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 3px 8px;
+    margin: 1px 2px;
+    border-radius: 4px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    min-height: 24px;
+    min-width: 0px;
+    transition: background-color 60ms ease;
+}
+
+.notepad-light button.notepad-menu-btn {
+    color: #1a1a1a;
+}
+
+.notepad-light button.notepad-menu-btn:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.notepad-light button.notepad-menu-btn:active {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.notepad-dark button.notepad-menu-btn {
+    color: #f3f3f3;
+}
+
+.notepad-dark button.notepad-menu-btn:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.notepad-dark button.notepad-menu-btn:active {
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+button.notepad-icon-btn,
+.notepad-icon-btn {
+    border-radius: 4px;
+    padding: 4px 6px;
+    background: transparent;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    min-width: 28px;
+    min-height: 28px;
+    transition: background-color 60ms ease;
+}
+
+.notepad-light button.notepad-icon-btn:hover,
+.notepad-light .notepad-icon-btn:hover {
+    background: rgba(0, 0, 0, 0.07);
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.notepad-dark button.notepad-icon-btn:hover,
+.notepad-dark .notepad-icon-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* --------------------------------------------------------------------------
+   FLOATING FIND & REPLACE PANEL
+   -------------------------------------------------------------------------- */
+.find-replace-panel {
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin: 8px 16px;
+}
+
+.find-input {
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+.find-count-label {
+    font-size: 11px;
+    color: #888888;
+    margin: 0 6px;
+}
+
+.pill-btn {
+    border-radius: 4px;
+    font-size: 11.5px;
+    padding: 4px 10px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.pill-btn:hover {
+    background-color: rgba(128, 128, 128, 0.15);
+}
