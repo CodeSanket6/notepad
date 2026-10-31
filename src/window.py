@@ -81,10 +81,10 @@ class NotepadWindow(Adw.ApplicationWindow):
 
         # Notepad App Logo at the far left side of the titlebar
         icon_candidates = [
-            os.path.expanduser("~/.local/share/icons/hicolor/24x24/apps/io.ninja.notepad.png"),
-            "/app/share/icons/hicolor/24x24/apps/io.ninja.notepad.png",
+            os.path.expanduser("~/.local/share/icons/hicolor/24x24/apps/io.github.CodeSanket6.notepad.png"),
+            "/app/share/icons/hicolor/24x24/apps/io.github.CodeSanket6.notepad.png",
             os.path.join(os.path.dirname(__file__), "../assets/notepad.png"),
-            os.path.join(os.path.dirname(__file__), "../data/icons/hicolor/24x24/apps/io.ninja.notepad.png"),
+            os.path.join(os.path.dirname(__file__), "../data/icons/hicolor/24x24/apps/io.github.CodeSanket6.notepad.png"),
             "/home/sanket/Downloads/notepad/notepad-linux/assets/notepad.png"
         ]
         found_icon = None
@@ -96,7 +96,7 @@ class NotepadWindow(Adw.ApplicationWindow):
         if found_icon:
             self.app_logo = Gtk.Image.new_from_file(found_icon)
         else:
-            self.app_logo = Gtk.Image.new_from_icon_name("io.ninja.notepad")
+            self.app_logo = Gtk.Image.new_from_icon_name("io.github.CodeSanket6.notepad")
         self.app_logo.set_pixel_size(18)
         self.app_logo.add_css_class("notepad-titlebar-logo")
         self.app_logo.set_margin_start(10)

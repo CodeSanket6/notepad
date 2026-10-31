@@ -13,7 +13,7 @@ datadir = prefix / get_option('datadir')
 pkgdatadir = datadir / meson.project_name()
 pythondir = python_bin.get_install_dir()
 
-app_id = 'io.ninja.notepad'
+app_id = 'io.github.CodeSanket6.notepad'
 
 subdir('data')
 subdir('src')

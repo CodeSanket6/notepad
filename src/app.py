@@ -17,7 +17,7 @@ from .window import NotepadWindow
 class NotepadApp(Adw.Application):
     def __init__(self):
         super().__init__(
-            application_id="io.ninja.notepad",
+            application_id="io.github.CodeSanket6.notepad",
             flags=Gio.ApplicationFlags.HANDLES_OPEN | Gio.ApplicationFlags.NON_UNIQUE
         )
         self.css_provider = None

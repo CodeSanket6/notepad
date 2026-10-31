@@ -4,7 +4,7 @@ set -e
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
-APP_ID="io.ninja.notepad"
+APP_ID="io.github.CodeSanket6.notepad"
 BUNDLE_FILE="$APP_ID.flatpak"
 BUILD_DIR="$SCRIPT_DIR/flatpak_build"
 APP_DIR="$BUILD_DIR/app_dir"

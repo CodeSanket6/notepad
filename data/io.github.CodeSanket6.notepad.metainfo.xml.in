@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>io.ninja.notepad</id>
+  <id>io.github.CodeSanket6.notepad</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
   <name>Notepad</name>
@@ -24,11 +24,11 @@
       </description>
     </release>
   </releases>
-  <launchable type="desktop-id">io.ninja.notepad.desktop</launchable>
-  <url type="homepage">https://ninja.io/notepad</url>
-  <url type="bugtracker">https://github.com/ninja/notepad/issues</url>
-  <url type="vcs-browser">https://github.com/ninja/notepad</url>
-  <developer id="io.ninja">
-    <name>Ninja</name>
+  <launchable type="desktop-id">io.github.CodeSanket6.notepad.desktop</launchable>
+  <url type="homepage">https://github.com/CodeSanket6/notepad</url>
+  <url type="bugtracker">https://github.com/CodeSanket6/notepad/issues</url>
+  <url type="vcs-browser">https://github.com/CodeSanket6/notepad</url>
+  <developer>
+    <name>Sanket</name>
   </developer>
 </component>

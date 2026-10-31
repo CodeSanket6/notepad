@@ -97,8 +97,8 @@ class SettingsDialog(Adw.PreferencesWindow):
             subtitle="Windows 11 Fluent Notepad ported to Linux with GtkSourceView 5"
         )
         icon_path = os.path.join(os.path.dirname(__file__), "../assets/notepad.png")
-        if Gtk.IconTheme.get_for_display(self.get_display() or Gdk.Display.get_default()).has_icon("io.ninja.notepad"):
-            about_img = Gtk.Image.new_from_icon_name("io.ninja.notepad")
+        if Gtk.IconTheme.get_for_display(self.get_display() or Gdk.Display.get_default()).has_icon("io.github.CodeSanket6.notepad"):
+            about_img = Gtk.Image.new_from_icon_name("io.github.CodeSanket6.notepad")
         elif os.path.exists(icon_path):
             about_img = Gtk.Image.new_from_file(icon_path)
         else:

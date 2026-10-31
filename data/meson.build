@@ -1,7 +1,7 @@
 # Desktop file
 configure_file(
-  input: 'io.ninja.notepad.desktop.in',
-  output: 'io.ninja.notepad.desktop',
+  input: 'io.github.CodeSanket6.notepad.desktop.in',
+  output: 'io.github.CodeSanket6.notepad.desktop',
   copy: true,
   install: true,
   install_dir: datadir / 'applications'
@@ -9,8 +9,8 @@ configure_file(
 
 # Appstream metainfo
 configure_file(
-  input: 'io.ninja.notepad.metainfo.xml.in',
-  output: 'io.ninja.notepad.metainfo.xml',
+  input: 'io.github.CodeSanket6.notepad.metainfo.xml.in',
+  output: 'io.github.CodeSanket6.notepad.metainfo.xml',
   copy: true,
   install: true,
   install_dir: datadir / 'metainfo'
@@ -19,7 +19,7 @@ configure_file(
 # Icons
 foreach size : ['16x16', '24x24', '32x32', '48x48', '64x64', '128x128', '256x256', '512x512']
   install_data(
-    'icons' / 'hicolor' / size / 'apps' / 'io.ninja.notepad.png',
+    'icons' / 'hicolor' / size / 'apps' / 'io.github.CodeSanket6.notepad.png',
     install_dir: datadir / 'icons' / 'hicolor' / size / 'apps'
   )
 endforeach
